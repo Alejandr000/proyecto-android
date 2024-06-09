@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="RolesEstado">
+        <item>Activo</item>
+        <item>Resuelto</item>
+    </string-array>
+
+
+</resources>

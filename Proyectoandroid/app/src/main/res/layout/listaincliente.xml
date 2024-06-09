@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cards"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="20dp"
+
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/listCancion"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless">
+
+        <ImageView
+            android:id="@+id/imgAlbum"
+            android:layout_width="69dp"
+
+            android:layout_height="75dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="74dp"
+            android:background="@drawable/ic_action_warning"
+            android:backgroundTint="#FFCC00"
+            android:foregroundGravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/txtCan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imgAlbum"
+            android:text="Fecha:"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtAlbum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtCan"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imgAlbum"
+            android:text="Descripción:" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAlbum"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imgAlbum"
+            android:text="Estado:" />
+
+        <TextView
+            android:id="@+id/FilaFechaIncidenciacli"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="53dp"
+            android:layout_toEndOf="@+id/txtCan"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/FilaDescripcionIncidenciacli"
+            android:layout_width="161dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FilaFechaIncidenciacli"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/txtAlbum"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/FilaEstadoIncidenciacli"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FilaDescripcionIncidenciacli"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="9dp"
+            android:layout_toEndOf="@+id/textView13"
+            android:text="TextView" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView13"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imgAlbum"
+            android:text="Tipo:" />
+
+        <TextView
+            android:id="@+id/FilaIdTipoIncidenciacli"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/FilaEstadoIncidenciacli"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/textView18"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/btnVerIncidenciacli"
+            android:layout_width="160dp"
+            android:layout_height="47dp"
+            android:layout_below="@+id/textView18"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="83dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="128dp"
+            android:backgroundTint="#3F51B5"
+            android:text="Ver Incidente"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
